@@ -4,5 +4,6 @@ exports.config = {
     suites: {
         js: 'javascript/spec.js',
         jsWithPO: 'javascriptWithPO/spec.js',
+        jsWithPORefined: 'javascriptWithPORefined/spec.js',
     },
 }
