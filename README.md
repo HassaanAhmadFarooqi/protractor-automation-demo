@@ -10,10 +10,12 @@ using protractor as described in
 
 #### 1. js
 
+Basic spec code as described in 
+[protractor tutorial](https://www.protractortest.org/#/tutorial).
+
 - Command to run: `protractor conf.js --suite js`
 - Folder: `javascript`
-- `javascript/spec.js` has the spec code as described in 
-[protractor tutorial](https://www.protractortest.org/#/tutorial).
+- `javascript/spec.js`: spec code.
 
 #### 2. jsWithPO
 
