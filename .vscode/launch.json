@@ -1,0 +1,23 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Launch Program: Basic",
+            "stopOnEntry": false,
+            "program": "${workspaceFolder}/node_modules/protractor/bin/protractor",
+            "args": ["${workspaceFolder}/conf.js", "--suite", "basic"],
+            "smartStep": true
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Launch Program: Refined",
+            "stopOnEntry": false,
+            "program": "${workspaceFolder}/node_modules/protractor/bin/protractor",
+            "args": ["${workspaceFolder}/conf.js", "--suite", "refined"],
+            "smartStep": true
+        }
+    ]
+}
