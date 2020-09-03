@@ -1,0 +1,27 @@
+{
+    "name": "protractor-automation-demo",
+    "version": "1.0.0",
+    "description": "Protractor Automation Demo using JavaScript",
+    "main": "conf.js",
+    "scripts": {
+        "test:basic": "protractor conf.js --suite basic",
+        "test:refined": "protractor conf.js --suite refined"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/HassaanAhmadFarooqi/protractor-automation-demo.git"
+    },
+    "author": "Hassaan Ahmad Farooqi",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/HassaanAhmadFarooqi/protractor-automation-demo/issues"
+    },
+    "homepage": "https://github.com/HassaanAhmadFarooqi/protractor-automation-demo#readme",
+    "dependencies": {
+        "@types/jasmine": "^3.5.14",
+        "@types/node": "^14.6.3",
+        "jasmine": "^3.6.1",
+        "jasmine-spec-reporter": "^5.0.2",
+        "protractor": "^7.0.0"
+    }
+}
