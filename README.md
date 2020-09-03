@@ -1,37 +1,52 @@
 protractor-automation-demo
 =======
 
-This repo contains the actual and refined code for doing automation of a 
+This repo covers protractor automation of a 
 [demo calculator page](http://juliemr.github.io/protractor-demo/), 
-using protractor as described in 
+as described in 
+[protractor tutorial](https://www.protractortest.org/#/tutorial),
+using JavaScript.
+
+Check 
+[this repo](https://github.com/HassaanAhmadFarooqi/protractor-automation-demo-typescript) 
+for the TypeScript version of the same.
+
+## How to Run
+
+- Install the dependencies:
+    ```
+    npm install
+    ```
+- Run the test  
+    Basic:
+    ```
+    npm run test:basic
+    ```
+    or Refined:
+    ```
+    npm run test:refined
+    ```
+    (Check 
+    [package.json](package.json) 
+    for more details about these run configurations).
+
+*Note:* If you're using 
+[VSCode](https://code.visualstudio.com/), 
+then you can run the program using VScode's Run Button also.  
+(Configurations for running using Run button are present in 
+[.vscode/launch.json](.vscode/launch.json))
+
+## Suites 
+
+### 1. basic
+
+It contains the basic spec code as described in 
 [protractor tutorial](https://www.protractortest.org/#/tutorial).
 
-## Suites
+### 2. refined
 
-#### 1. js
-
-Basic spec code as described in 
-[protractor tutorial](https://www.protractortest.org/#/tutorial).
-
-- Command to run: `protractor conf.js --suite js`
-- Folder: `javascript`
-- `javascript/spec.js`: spec code.
-
-#### 2. jsWithPO
-
-The same test with a refactored code i.e. with addition of page object.
-
-- Command to run: `protractor conf.js --suite jsWithPO`
-- Folder: `javascriptWithPO`
-- `javascriptWithPO/calculator.po.js`: page object for the spec.
-- `javascriptWithPO/spec.js`: refactored spec code.
-
-#### 3. jsWithPORefined
-
-Updated test spec with the addition of other calculator operations. 
-Used *async / await*, refined and cleaned the code.   
-
-- Command to run: `protractor conf.js --suite jsWithPORefined`
-- Folder: `javascriptWithPORefined`
-- `javascriptWithPORefined/calculator.po.js`: page object for the spec.
-- `javascriptWithPORefined/spec.js`: updated and refined spec code.
+It uses the same example, but the code has refined form. i.e. 
+- [calculator.po.js](refined/calculator.po.js) 
+page object has been used for calculator page interactions.
+- The test spec has been updated, and it covers other missing test cases.
+- *async* and *await* have been used.
