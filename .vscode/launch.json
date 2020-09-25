@@ -2,22 +2,30 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "type": "node",
+            "name": "Launch via NPM: Basic",
             "request": "launch",
-            "name": "Launch Program: Basic",
-            "stopOnEntry": false,
-            "program": "${workspaceFolder}/node_modules/protractor/bin/protractor",
-            "args": ["${workspaceFolder}/conf.js", "--suite", "basic"],
-            "smartStep": true
+            "runtimeArgs": [
+                "run",
+                "test:basic"
+            ],
+            "runtimeExecutable": "npm",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "type": "pwa-node"
         },
         {
-            "type": "node",
+            "name": "Launch via NPM: Refined",
             "request": "launch",
-            "name": "Launch Program: Refined",
-            "stopOnEntry": false,
-            "program": "${workspaceFolder}/node_modules/protractor/bin/protractor",
-            "args": ["${workspaceFolder}/conf.js", "--suite", "refined"],
-            "smartStep": true
+            "runtimeArgs": [
+                "run",
+                "test:refined"
+            ],
+            "runtimeExecutable": "npm",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "type": "pwa-node"
         }
     ]
 }
